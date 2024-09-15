@@ -13,3 +13,5 @@ export function classNames(
       .map(([className]) => className),
   ].join(' ');
 }
+
+// ('sads', {selected: true, hover: false})
