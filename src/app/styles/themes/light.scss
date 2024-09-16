@@ -1,6 +1,10 @@
 .app.light {
-	--bg-color: rgb(212, 212, 212);
+  --bg-color: rgb(212, 212, 212); // Светло-серый фон
+  --inverted-bg-color: rgb(8, 8, 133); // Тёмно-синий для текста
 
-	--primary-color: #053294;
-	--secondary-color: rgb(23, 9, 218);
+  --primary-color: #053294; // Глубокий синий для основных элементов
+  --secondary-color: rgb(23, 9, 218); // Яркий синий для акцентов
+
+  --inverted-primary-color: #055f05; // Тёмно-зелёный для инвертированных тёмных элементов
+  --inverted-secondary-color: rgb(11, 185, 11); // Ярко-зелёный для акцентов на тёмных фонах
 }
