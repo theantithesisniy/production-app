@@ -5,12 +5,12 @@ import {
 } from './ThemeContext';
 import { useContext } from 'react';
 
-interface IUseThemeResult {
+interface UseThemeResult {
   toggleTheme: () => void;
   theme: Theme;
 }
 
-export function useTheme(): IUseThemeResult {
+export function useTheme(): UseThemeResult {
   const { theme, setTheme } = useContext(ThemeContext);
 
   const toggleTheme = () => {

@@ -1,17 +1,21 @@
 import { useTheme } from 'app/providers/ThemeProvider/lib/useTheme';
-import { Link } from 'react-router-dom';
 import { classNames } from 'shared/lib/classNames/classNames';
-import './styles/index.scss';
 import { Navbar } from 'widgets/Navbar';
+import { Sidebar } from 'widgets/Sidebar';
 import { AppRouter } from './providers/router/AppRouter';
+import './styles/index.scss';
 
 const App = () => {
 	const { theme } = useTheme()
 	return (
 		<div className={classNames('app', {}, [theme])}>
-			<Navbar/>
-			<AppRouter />
+			<Navbar />
+			<div className='content-page'>
+				<Sidebar />
+				<AppRouter />
+			</div>
 		</div>
 	)
 }
+
 export default App;

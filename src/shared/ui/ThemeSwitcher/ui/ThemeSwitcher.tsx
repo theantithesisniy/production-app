@@ -5,11 +5,11 @@ import { classNames } from 'shared/lib/classNames/classNames';
 import cls from './ThemeSwitcher.module.scss';
 import { Button, ThemeButton } from 'shared/ui/Button/Button';
 
-interface IThemeSwitcherProps {
+interface ThemeSwitcherProps {
 	className?: string;
 }
 
-export const ThemeSwitcher = ({ className }: IThemeSwitcherProps) => {
+export const ThemeSwitcher = ({ className }: ThemeSwitcherProps) => {
 	const { theme, toggleTheme } = useTheme();
 
 	return (
